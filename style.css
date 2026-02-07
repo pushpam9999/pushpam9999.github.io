@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero img {
+  width: 200px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #38bdf8;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 60px 80px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.bar {
+  background: #334155;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.fill {
+  height: 10px;
+  background: #38bdf8;
+  width: 0;
+  border-radius: 5px;
+}
+
+.python { width: 80%; }
+.sql { width: 80%; }
+.powerbi { width: 90%; }
+.excel { width: 90%; }
+.tableau { width: 80%; }
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4,1, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+.project-card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;          
+  max-height: 200px;   
+  object-fit: contain;   
+  border-radius: 8px;
+  background: #020617;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
